@@ -10,6 +10,10 @@ app.get("/", function(req, res) {
 app.get("/about", function(req, res) {
     res.render("about");
 });
+app.get("/services", function(req, res) {
+    res.send("This is services page");
+	res.end();
+});
 app.listen(4000, function() {
     console.log("server is listening!!!");
 });
